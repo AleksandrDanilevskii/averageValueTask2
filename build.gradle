@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.spbu'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jade.tilab.com/maven/"
+    }
+}
+
+dependencies {
+    implementation('com.tilab.jade:jade:4.5.0')
+}
